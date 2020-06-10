@@ -408,7 +408,7 @@ button {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 22;
   -webkit-box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
   top: 0;
@@ -498,7 +498,7 @@ button {
 
 .mobile-header .search-section .has-search .form-control-feedback {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   display: block;
   margin-top: -2px;
   font-size: 20px;
