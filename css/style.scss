@@ -10,7 +10,14 @@ small,
 span {
     font-family: Poppins;
 }
-
+input {
+    outline: 2px solid transparent !important;
+    box-shadow: none !important;
+}
+button {
+    outline: 2px solid transparent !important;
+    box-shadow: none !important;
+}
 .carousel-item {
     height: 420px;
 
@@ -89,7 +96,7 @@ span {
                     align-items: flex-start;
                 }
                 img {
-                    height: 33px; 
+                    height: 50px;
                     @media (max-width: 750px) {
                         margin: 10px 0px 0px 0px;
                         margin: auto;

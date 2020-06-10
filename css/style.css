@@ -11,6 +11,18 @@ span {
   font-family: Poppins;
 }
 
+input {
+  outline: 2px solid transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+button {
+  outline: 2px solid transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .carousel-item {
   height: 420px;
 }
@@ -135,7 +147,7 @@ span {
 }
 
 .container-fluid .header .head-body .logo-section img {
-  height: 33px;
+  height: 50px;
 }
 
 @media (max-width: 750px) {
