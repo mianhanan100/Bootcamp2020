@@ -162,7 +162,7 @@ button {
   padding-top: 0px;
   height: 16px;
   margin-left: -25px;
-  margin-top: 0px;
+  margin-top: 5px;
   font-size: 22px;
 }
 
@@ -206,7 +206,7 @@ button {
   position: absolute;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding-top: 38px;
+  padding-top: 44px;
   right: 0;
   z-index: 9999;
   display: none;
