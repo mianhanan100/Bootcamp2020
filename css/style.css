@@ -147,7 +147,7 @@ button {
 }
 
 .container-fluid .header .head-body .logo-section img {
-  height: 50px;
+  height: 34px;
 }
 
 @media (max-width: 750px) {
@@ -162,7 +162,7 @@ button {
   padding-top: 0px;
   height: 16px;
   margin-left: -25px;
-  margin-top: 5px;
+  margin-top: 0px;
   font-size: 22px;
 }
 
@@ -206,7 +206,7 @@ button {
   position: absolute;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  padding-top: 44px;
+  padding-top: 39px;
   right: 0;
   z-index: 9999;
   display: none;

@@ -96,7 +96,7 @@ button {
                     align-items: flex-start;
                 }
                 img {
-                    height: 50px;
+                    height: 34px;
                     @media (max-width: 750px) {
                         margin: 10px 0px 0px 0px;
                         margin: auto;
@@ -108,7 +108,7 @@ button {
                     padding-top: 0px;
                     height: 16px;
                     margin-left: -25px;
-                    margin-top: 5px;
+                    margin-top: 0px;
                     font-size: 22px;
 
                     @media (max-width: 750px) {
@@ -136,7 +136,7 @@ button {
                     transition-duration: 0.5s;
                 }
 
-                ul li ul {
+              ul li ul {
                     background: transparent;
                     color: #212529;
                     visibility: hidden;
@@ -145,7 +145,7 @@ button {
                     width: 200px;
                     position: absolute;
                     transition: all 0.5s ease;
-                    padding-top: 44px;
+                    padding-top: 39px;
                     right: 0;
                     z-index: 9999;
                     display: none;
