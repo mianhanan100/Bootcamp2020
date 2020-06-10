@@ -135,15 +135,18 @@
 							<div class="cart-section">
 								<div class="cart-section">
 									<div class="cart">
-										<span class="cart-lable">Cart</span>
 										<span class="mdi mdi-cart-outline"></span>
-										<span>0</span>
+										<span class="cart-lable">Cart</span>
+
 									</div>
 									<div class="signin">
 										<a href="" data-toggle="modal" data-target="#modalLRForm">
-											<span class="signin-lable">Sign In</span>
 											<span class="mdi mdi-account-outline"></span>
+											<span class="signin-lable">Sign In</span>
 										</a>
+									</div>
+									<div class="cart ml-3">
+										<span class="mdi mdi-comment-alert-outline"></span>
 									</div>
 								</div>
 							</div>
@@ -155,97 +158,94 @@
 		<div class="mobile-header">
 			<div class="header">
 				<div class="row">
-					<div class="col-2 menu-section-mbl">
-						<!-- <div class="main-div"> -->
-						<nav role="navigation">
-							<ul>
-								<li> <span class="mdi mdi-menu"></span>
-									<ul class="dropdown main-slider-sectuion">
-										<div class="side-nav">
-											<div class="heading">
-												<p>
-													TOP CATEGORIES
-												</p>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-bluetooth-audio"></span>
-												<span>
-													Bluetooth handsfree
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-headset"></span>
-												<span>
-													Bluetooth headphones
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-power"></span>
-												<span>
-													Power bank
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-headphones"></span>
-												<span>
-													Handsfree
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-battery-charging"></span>
-												<span>
-													Chargers
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-ethernet-cable"></span>
-												<span>
-													Data cables
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-speaker"></span>
-												<span>
-													Speakers
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-usb"></span>
-												<span>
-													Usb/OTG Connectors
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-cellphone-android"></span>
-												<span>
-													Screen Protectors
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-gamepad-variant"></span>
-												<span>
-													Gaming Trigger
-												</span>
-											</div>
-											<div class="CATEGORIES">
-												<span class="mdi mdi-car-side"></span>
-												<span>
-													Car mobile accessories
-												</span>
-											</div>
-										</div>
-									</ul>
-								</li>
+					<div class="col-3 menu-section-mbl">
+						<span class="mbl-menu-icon" onclick="openNav()">&#9776;</span>
+						<div id="mySidenav" class="sidenav">
+							<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+							<ul class="dropdown main-slider-sectuion">
+								<div class="side-nav">
+									<div class="heading">
+										<p>
+											TOP CATEGORIES
+										</p>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-bluetooth-audio"></span>
+										<span>
+											Bluetooth handsfree
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-headset"></span>
+										<span>
+											Bluetooth headphones
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-power"></span>
+										<span>
+											Power bank
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-headphones"></span>
+										<span>
+											Handsfree
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-battery-charging"></span>
+										<span>
+											Chargers
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-ethernet-cable"></span>
+										<span>
+											Data cables
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-speaker"></span>
+										<span>
+											Speakers
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-usb"></span>
+										<span>
+											Usb/OTG Connectors
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-cellphone-android"></span>
+										<span>
+											Screen Protectors
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-gamepad-variant"></span>
+										<span>
+											Gaming Trigger
+										</span>
+									</div>
+									<div class="CATEGORIES">
+										<span class="mdi mdi-car-side"></span>
+										<span>
+											Car mobile accessories
+										</span>
+									</div>
+								</div>
 							</ul>
-						</nav>
-						<!-- </div> -->
+						</div>
+
 					</div>
-					<div class="col-8 logo-section-mbl">
+					<div class="col-5 logo-section-mbl">
 						<div class="main-logo">
 							<img src="images/logo_78.jpg" alt="">
 						</div>
 					</div>
-					<div class="col-2 cart-section-mbl">
+					<div class="col-4 cart-section-mbl">
 						<div class="cart-section">
 							<div class="cart">
 								<span class="mdi mdi-cart"></span>
@@ -255,18 +255,22 @@
 									<span class="mdi mdi-account"></span>
 								</a>
 							</div>
+							<div class="cart">
+								<span class="mdi mdi-comment-alert-outline"></span>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="search-section">
-					<div class="input-group">
+
+					<!-- Actual search box -->
+					<div class="form-group has-search mb-0">
+						<span class="mdi mdi-magnify form-control-feedback"></span>
 						<input type="text" class="form-control" placeholder="What Are You Looking For?">
-						<div class="input-group-append">
-							<button class="btn btn-dark" type="button">
-								<span class="mdi mdi-magnify"></span>
-							</button>
-						</div>
 					</div>
+
+					<!-- Another variation with a button -->
+
 				</div>
 			</div>
 		</div>
@@ -1366,6 +1370,16 @@
 			});
 		});
 	</script>
+	<script>
+		function openNav() {
+			document.getElementById("mySidenav").style.width = "230px";
+		}
+
+		function closeNav() {
+			document.getElementById("mySidenav").style.width = "0";
+		}
+	</script>
+
 </body>
 
 </html>
