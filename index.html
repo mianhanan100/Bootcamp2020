@@ -135,19 +135,22 @@
 							<div class="cart-section">
 								<div class="cart-section">
 									<div class="cart">
-										<span class="mdi mdi-cart-outline"></span>
 										<span class="cart-lable">Cart</span>
+										<span class="mdi mdi-cart-outline"></span>
 
 									</div>
 									<div class="signin">
 										<a href="" data-toggle="modal" data-target="#modalLRForm">
-											<span class="mdi mdi-account-outline"></span>
 											<span class="signin-lable">Sign In</span>
+											<span class="mdi mdi-account-outline"></span>
+
 										</a>
 									</div>
-									<div class="cart ml-3">
-										<span class="mdi mdi-comment-alert-outline"></span>
-										
+									<div class=" complain">
+										<a href="" data-toggle="modal" data-target="#modalcomplain">
+											<span>complain</span>
+											<span class="mdi mdi-comment-alert-outline"></span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -257,7 +260,9 @@
 								</a>
 							</div>
 							<div class="cart">
-								<span class="mdi mdi-comment-alert-outline"></span>
+								<a href="" data-toggle="modal" data-target="#modalcomplain">
+									<span class="mdi mdi-comment-alert-outline"></span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -1195,13 +1200,7 @@
 									class="fas fa-user mr-1"></i>
 								Login</a>
 						</li>
-						<!-- <li class="nav-item">
-							<a class="nav-link" data-toggle="tab" href="#panel8" role="tab"><i
-									class="fas fa-user-plus mr-1"></i>
-								Register</a>
-						</li> -->
 					</ul>
-					<!-- Tab panels -->
 					<div class="tab-content">
 						<!--Panel 7-->
 						<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
@@ -1224,10 +1223,6 @@
 							</div>
 							<!--Footer-->
 							<div class="modal-footer">
-								<!-- <div class="options   mt-0">
-									<p>Not a member? <a href="#" class="blue-text">Sign Up</a></p>
-									<p>Forgot <a href="#" class="blue-text">Password?</a></p>
-								</div> -->
 								<button type="button" class="btn btn-outline-primary waves-effect ml-auto"
 									data-dismiss="modal">Close</button>
 							</div>
@@ -1237,6 +1232,81 @@
 			</div>
 			<!--/.Content-->
 		</div>
+	</div>
+
+	<div class="modal fade" id="modalcomplain" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog cascading-modal" role="document">
+			<!--Content-->
+			<div class="modal-content">
+				<!--Modal cascading tabs-->
+				<div class="modal-c-tabs">
+					<!-- Nav tabs -->
+					<ul class="nav nav-tabs md-tabs tabs-2 light-blue darken-3" role="tablist">
+						<li class="nav-item" style="width:100%">
+							<a class="nav-link active" data-toggle="tab" href="#panel7" role="tab"><i
+									class="fas fa-user mr-1"></i>
+								We are here to assist you!
+							</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<!--Panel 7-->
+						<div class="tab-pane fade in show active" id="panel7" role="tabpanel">
+							<!--Body-->
+							<div class="heading">
+								<small>
+									Please fill out the following form with your complaint.
+									<br>
+									We will review your request
+									and
+									follow up with you as soon as possible.
+
+								</small>
+							</div>
+							<div class="modal-body mb-1">
+								<div class="md-form form-sm">
+									<span class="mdi mdi-account-outline"></span>
+									<input type="email" id="modalLRInput10"
+										class="form-control form-control-sm validate" placeholder="Full Name">
+								</div>
+								<div class="md-form form-sm">
+									<span class="mdi mdi-email-outline"></span>
+									<input type="email" id="modalLRInput10"
+										class="form-control form-control-sm validate" placeholder="Enter Email">
+								</div>
+								<div class="md-form form-sm">
+									<span class="mdi mdi-phone"></span>
+									<input type="password" id="modalLRInput10"
+										class="form-control form-control-sm validate" placeholder="Mobile Number">
+								</div>
+								<div class="md-form form-sm mb-4">
+									<span class="mdi mdi-cart-plus"></span>
+									<input type="text" id="modalLRInput11" class="form-control form-control-sm validate"
+										placeholder="Order ID">
+								</div>
+
+								<div class="md-form form-sm mb-4 textarea">
+									<span class="mdi mdi-comment-question-outline"></span>
+									<textarea class="form-control" placeholder="Description"></textarea>
+								</div>
+								<div class="text-center mt-5">
+									<button class="btn login-btn hvr-grow-shadow">Submit</button>
+								</div>
+							</div>
+							<!--Footer-->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-outline-primary waves-effect ml-auto"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--/.Content-->
+		</div>
+	</div>
+
 	</div <script src="js/jquery-3.4.1.slim.min.js">
 	</script>
 	<script src="js/popper.min.js"></script>

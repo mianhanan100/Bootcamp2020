@@ -10,6 +10,10 @@ small,
 span {
     font-family: Poppins;
 }
+textarea {
+    outline: 2px solid transparent !important;
+    box-shadow: none !important;
+}
 input {
     outline: 2px solid transparent !important;
     box-shadow: none !important;
@@ -198,7 +202,7 @@ button {
             .cart-section {
                 display: flex;
                 justify-content: flex-end;
-                width: 220px;
+                width: 260px;
                 color: white !important;
                 margin-right: 5px;
                 @media (max-width: 750px) {
@@ -213,15 +217,25 @@ button {
                 .mdi {
                     color: white !important;
                     margin-left: 0px;
-                    font-size: 22px;
+                    font-size: 18px;
                 }
                 span {
                     color: white !important;
-                    font-size: 14px;
+                    font-size: 13px;
                 }
                 .cart {
+                    align-items: center;
                     color: white !important;
                     margin-right: 10px;
+                }
+                .signin {
+                    margin-right: 10px;
+                }
+                .complain {
+                    align-items: center;
+                    color: white !important;
+                    margin-right: 10px;
+                    cursor: pointer;
                 }
             }
         }
@@ -742,5 +756,32 @@ button {
     padding: 40px 30px;
     .mdi {
         font-size: 26px;
+    }
+}
+.modal-content {
+    .modal-body {
+        padding: 10px 40px !important;
+        .mdi-account-outline {
+            font-size: 28px;
+        }
+        .mdi {
+            font-size: 26px;
+        }
+        .textarea {
+            display: flex;
+            align-items: flex-start;
+            textarea {
+                border: none;
+                border-bottom: 1px solid #454d5e;
+                border-radius: 0px;
+                padding: 0px 10px;
+                height: 70px;
+            }
+        }
+    }
+    .heading {
+        width: 100%;
+        padding: 10px 20px;
+        text-align: center;
     }
 }

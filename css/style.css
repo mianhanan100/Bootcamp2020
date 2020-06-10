@@ -11,6 +11,12 @@ span {
   font-family: Poppins;
 }
 
+textarea {
+  outline: 2px solid transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 input {
   outline: 2px solid transparent !important;
   -webkit-box-shadow: none !important;
@@ -285,7 +291,7 @@ button {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 220px;
+  width: 260px;
   color: white !important;
   margin-right: 5px;
 }
@@ -312,17 +318,33 @@ button {
 .container-fluid .header .head-body .cart-section .mdi {
   color: white !important;
   margin-left: 0px;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 .container-fluid .header .head-body .cart-section span {
   color: white !important;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .container-fluid .header .head-body .cart-section .cart {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: white !important;
   margin-right: 10px;
+}
+
+.container-fluid .header .head-body .cart-section .signin {
+  margin-right: 10px;
+}
+
+.container-fluid .header .head-body .cart-section .complain {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white !important;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 #navbar {
@@ -965,5 +987,40 @@ button {
 
 .modal-body .mdi {
   font-size: 26px;
+}
+
+.modal-content .modal-body {
+  padding: 10px 40px !important;
+}
+
+.modal-content .modal-body .mdi-account-outline {
+  font-size: 28px;
+}
+
+.modal-content .modal-body .mdi {
+  font-size: 26px;
+}
+
+.modal-content .modal-body .textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.modal-content .modal-body .textarea textarea {
+  border: none;
+  border-bottom: 1px solid #454d5e;
+  border-radius: 0px;
+  padding: 0px 10px;
+  height: 70px;
+}
+
+.modal-content .heading {
+  width: 100%;
+  padding: 10px 20px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
