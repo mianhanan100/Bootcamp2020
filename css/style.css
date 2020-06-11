@@ -423,7 +423,7 @@ button {
 }
 
 .mobile-header .main-logo img {
-  height: 33px;
+  height: 30px;
 }
 
 .mobile-header .menu-section-mbl .sidenav {
@@ -955,7 +955,7 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
 .modal-dialog .md-form i {
