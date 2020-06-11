@@ -236,6 +236,9 @@ button {
                     color: white !important;
                     margin-right: 10px;
                     cursor: pointer;
+                    a {
+                        text-decoration: none;
+                    }
                 }
             }
         }
@@ -245,36 +248,9 @@ button {
 #navbar {
     z-index: 99;
     overflow: visible;
-    background-color: #333;
-}
-
-#navbar a {
-    float: left;
-    display: block;
-    text-align: center;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-#navbar a.active {
-    background-color: #4caf50;
-    color: white;
-}
-
-.content {
-    padding: 16px;
-}
-
-.sticky {
     position: fixed;
-    top: 0;
     width: 100%;
 }
-
-.sticky + .content {
-    padding-top: 60px;
-}
-
 .cart {
     text-decoration: none;
     cursor: pointer;
@@ -424,6 +400,7 @@ button {
     display: flex;
     padding: 15px 70px;
     width: 100%;
+    padding-top: 90px;
     min-height: 60px;
 
     @media (max-width: 750px) {
@@ -783,4 +760,14 @@ button {
         padding: 10px 20px;
         text-align: center;
     }
+}
+
+// products
+
+.products-content-outer {
+    width: 100%;
+    min-height: 600px;
+    background-color:#f0f2f5;
+    padding: 80px 8px;
+    
 }
