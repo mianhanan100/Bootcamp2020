@@ -10,6 +10,9 @@ small,
 span {
     font-family: Poppins;
 }
+a {
+    text-decoration: none !important;
+}
 textarea {
     outline: 2px solid transparent !important;
     box-shadow: none !important;
@@ -305,9 +308,7 @@ button {
         }
 
         .sidenav a {
-            padding: 8px 8px 8px 32px;
             text-decoration: none;
-            font-size: 25px;
             color: #818181;
             display: block;
             transition: 0.3s;
@@ -326,6 +327,7 @@ button {
         }
         .side-nav {
             box-shadow: none;
+            
         }
 
         @media screen and (max-height: 450px) {
@@ -420,6 +422,9 @@ button {
         background-color: white;
         box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
         padding: 10px 10px;
+        span {
+            color: #212529;
+        }
         @media (max-width: 750px) {
             margin-right: 0px;
             margin-bottom: 15px;

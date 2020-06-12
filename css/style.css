@@ -11,6 +11,10 @@ span {
   font-family: Poppins;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 textarea {
   outline: 2px solid transparent !important;
   -webkit-box-shadow: none !important;
@@ -421,9 +425,7 @@ button {
 }
 
 .mobile-header .menu-section-mbl .sidenav a {
-  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
   color: #818181;
   display: block;
   -webkit-transition: 0.3s;
@@ -561,6 +563,10 @@ button {
   -webkit-box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 17px 0 rgba(0, 0, 0, 0.1);
   padding: 10px 10px;
+}
+
+.main-slider-sectuion .side-nav span {
+  color: #212529;
 }
 
 @media (max-width: 750px) {
