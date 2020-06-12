@@ -29,11 +29,9 @@ button {
     height: 420px;
 
     @media (max-width: 750px) {
-        height: 250px;
+        height: 200px;
     }
-    .carousel-item {
-        height: 400px;
-    }
+
 }
 
 .carousel-indicators li {

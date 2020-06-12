@@ -39,12 +39,8 @@ button {
 
 @media (max-width: 750px) {
   .carousel-item {
-    height: 250px;
+    height: 200px;
   }
-}
-
-.carousel-item .carousel-item {
-  height: 400px;
 }
 
 .carousel-indicators li {
