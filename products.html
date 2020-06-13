@@ -345,19 +345,26 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="" id="pills-profile-tab" data-toggle="pill" href="#pills-profile"
-                                            role="tab" aria-controls="pills-profile" aria-selected="false">Price - Low to
+                                            role="tab" aria-controls="pills-profile" aria-selected="false">Price - Low
+                                            to
                                             High</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="" id="pills-contact-tab" data-toggle="pill" href="#pills-contact"
-                                            role="tab" aria-controls="pills-contact" aria-selected="false">Price - High to
+                                            role="tab" aria-controls="pills-contact" aria-selected="false">Price - High
+                                            to
                                             Low</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="" id="pills-contact-tab2" data-toggle="pill" href="#pills-contact2"
-                                            role="tab" aria-controls="pills-contact" aria-selected="false">Newest First </a>
+                                            role="tab" aria-controls="pills-contact" aria-selected="false">Newest First
+                                        </a>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Apply</button>
                             </div>
                         </div>
                     </div>
@@ -379,19 +386,102 @@
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                             </div>
-                            <div class="modal-body">
-                                222
+                            <div class="modal-body products-content" style="padding-top: 0px !important;">
+                                <div class="filter-section">
+                                    <div class="filter-box">
+                                        <a data-toggle="collapse" data-target="#demo1">
+                                            <span>CATEGORIES</span>
+                                            <span class="mdi mdi-chevron-down"></span>
+                                        </a>
+                                        <div id="demo1" class="collapse  show">
+                                            <h6>Bluetooth handsfree</h6>
+                                            <h6> Bluetooth headphones</h6>
+                                            <h6> Power bank</h6>
+                                            <h6>Chargers</h6>
+                                            <h6> Data cables</h6>
+                                            <h6>Speakers</h6>
+                                        </div>
+                                    </div>
+                                    <div class="filter-box">
+                                        <a data-toggle="collapse" data-target="#demo2">
+                                            <span>EXPRESS DELIVERY</span>
+                                            <span class="mdi mdi-chevron-down"></span>
+                                        </a>
+                                        <div id="demo2" class="collapse  show">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Yes</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-box">
+                                        <a data-toggle="collapse" data-target="#demo3">
+                                            <span>PRICE</span>
+                                            <span class="mdi mdi-chevron-down"></span>
+                                        </a>
+                                        <div id="demo3" class="collapse  show">
+                                            <div class="filter level-filter level-req">
+                                                <div id="rangeSlider" class="range-slider">
+                                                    <div class="range-group">
+                                                        <input class="range-input" value="50" min="1" max="500" step="1"
+                                                            type="range" />
+                                                        <input class="range-input" value="450" min="1" max="500"
+                                                            step="1" type="range" />
+                                                    </div>
+                                                    <div class="number-group">
+                                                        <input class="number-input" type="number" value="50" min="0"
+                                                            max="500" />
+                                                        <b>-</b>
+                                                        <input class="number-input" type="number" value="450" min="0"
+                                                            max="500" />
+                                                        <button class="number-input btn btn-primary">
+                                                            <span class="mdi mdi-chevron-right"></span>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-box">
+                                        <a data-toggle="collapse" data-target="#demo4">
+                                            <span>BRAND</span>
+                                            <span class="mdi mdi-chevron-down"></span>
+                                        </a>
+                                        <div id="demo4" class="collapse  show">
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck11">
+                                                <label class="form-check-label" for="exampleCheck11">Alcatel</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck12">
+                                                <label class="form-check-label" for="exampleCheck12">Amazon</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck13">
+                                                <label class="form-check-label" for="exampleCheck13">Apple</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck14">
+                                                <label class="form-check-label" for="exampleCheck14">Calme</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck15">
+                                                <label class="form-check-label" for="exampleCheck15">G'Five</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Cancel</button>
-                                <button type="button" class="btn btn-success">Apply</button>
+                                <button type="button" class="btn btn-light" data-dismiss="modal">Reset</button>
+                                <button type="button" class="btn btn-success" data-dismiss="modal">Done</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="products-content">
-                <div class="filter-section">
+                <div class="filter-section hide-filter">
                     <div class="filter-head">
                         <h5>
                             Filters

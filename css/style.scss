@@ -772,13 +772,13 @@ button {
     padding: 85px 8px 40px;
     @media (max-width: 750px) {
         padding: 108px 8px 40px;
+        .hide-filter {
+            display: none;
+        }
     }
     .products-content {
         display: flex;
         .filter-section {
-            @media (max-width: 750px) {
-                display: none;
-            }
             width: 330px;
             background: white;
             min-height: 300px;
@@ -1127,14 +1127,14 @@ button {
                     margin-bottom: 5px;
                     background-color: white;
                     display: flex;
-                    
+
                     flex-direction: column;
-                    a{
-                        color:black;
+                    a {
+                        color: black;
                     }
-                    .active{
-                        color:#2874f0;
-                        border-bottom:none !important;
+                    .active {
+                        color: #2874f0;
+                        border-bottom: none !important;
                     }
                 }
             }

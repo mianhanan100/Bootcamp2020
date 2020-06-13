@@ -1016,6 +1016,9 @@ button {
   .products-content-outer {
     padding: 108px 8px 40px;
   }
+  .products-content-outer .hide-filter {
+    display: none;
+  }
 }
 
 .products-content-outer .products-content {
@@ -1029,12 +1032,6 @@ button {
   background: white;
   min-height: 300px;
   margin-right: 10px;
-}
-
-@media (max-width: 750px) {
-  .products-content-outer .products-content .filter-section {
-    display: none;
-  }
 }
 
 .products-content-outer .products-content .filter-section .filter-head {
