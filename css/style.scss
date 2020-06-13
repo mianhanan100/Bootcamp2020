@@ -1113,22 +1113,36 @@ button {
                 font-weight: 600;
                 font-size: 16px;
             }
-            
         }
-        .modal-content{
+        .modal-content {
             border-radius: 0px;
             .modal-header {
                 padding: 10px 20px;
             }
             .modal-body {
                 padding: 10px 20px !important;
-
+                .nav-item {
+                    width: 100%;
+                    text-align: left;
+                    margin-bottom: 5px;
+                    background-color: white;
+                    display: flex;
+                    
+                    flex-direction: column;
+                    a{
+                        color:black;
+                    }
+                    .active{
+                        color:#2874f0;
+                        border-bottom:none !important;
+                    }
+                }
             }
             .modal-footer {
                 display: flex;
                 flex-direction: row;
                 padding: 0px;
-                border:none;
+                border: none;
                 button {
                     margin: 0px;
                     width: 50%;
@@ -1136,6 +1150,5 @@ button {
                 }
             }
         }
-        
     }
 }
