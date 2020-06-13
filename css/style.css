@@ -1014,7 +1014,7 @@ button {
 
 @media (max-width: 750px) {
   .products-content-outer {
-    padding: 120px 8px 40px;
+    padding: 108px 8px 40px;
   }
 }
 
@@ -1280,6 +1280,12 @@ button {
   padding: 15px;
 }
 
+@media (max-width: 750px) {
+  .products-content-outer .products-content .products-section .desktop-filter {
+    display: none;
+  }
+}
+
 .products-content-outer .products-content .products-section h6 {
   margin-top: 5px;
   font-weight: 600;
@@ -1303,7 +1309,7 @@ button {
 
 .products-content-outer .products-content .products-section .nav-link {
   padding: 0px 5px;
-  margin-right: 15px;
+  margin-right: 5px;
   background-color: white;
   border-radius: 0px;
   color: black;
@@ -1370,5 +1376,73 @@ button {
 .products-content-outer .products-content .products-section .tab-content .product-detail .price del {
   color: #878787;
   font-size: 12px;
+}
+
+.products-content-outer .mobile-filter {
+  min-height: 20px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+@media (min-width: 750px) {
+  .products-content-outer .mobile-filter {
+    display: none;
+  }
+}
+
+.products-content-outer .mobile-filter .mbl-sort {
+  width: 100%;
+  border-right: 1px solid #f0f0f0;
+  text-align: center;
+  padding: 10px;
+}
+
+.products-content-outer .mobile-filter .mbl-sort span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.products-content-outer .mobile-filter .mbl-filter {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.products-content-outer .mobile-filter .mbl-filter span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.products-content-outer .mobile-filter .modal-content {
+  border-radius: 0px;
+}
+
+.products-content-outer .mobile-filter .modal-content .modal-header {
+  padding: 10px 20px;
+}
+
+.products-content-outer .mobile-filter .modal-content .modal-body {
+  padding: 10px 20px !important;
+}
+
+.products-content-outer .mobile-filter .modal-content .modal-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 0px;
+  border: none;
+}
+
+.products-content-outer .mobile-filter .modal-content .modal-footer button {
+  margin: 0px;
+  width: 50%;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
