@@ -775,7 +775,7 @@ button {
     background-color: #f0f2f5;
     padding: 85px 8px 40px;
     @media (max-width: 750px) {
-        padding: 108px 8px 40px;
+        padding: 108px 0px 40px;
         .hide-filter {
             display: none;
         }
@@ -1050,6 +1050,7 @@ button {
                     min-height: 330px;
                     background-color: white;
                     width: 100%;
+
                     .product-img {
                         width: 100%;
                         padding-top: 5px;
@@ -1057,6 +1058,20 @@ button {
                         img {
                             width: 80%;
                             margin: auto;
+                        }
+                    }
+                    @media (max-width: 750px) {
+                        min-height: 100px;
+                        display: flex;
+                        border-bottom: 1px solid #f0f0f0;
+                        .product-img {
+                            width: 40%;
+                            padding-top: 5px;
+                            text-align: center;
+                            img {
+                                width: 80%;
+                                margin: auto;
+                            }
                         }
                     }
                 }
@@ -1187,8 +1202,34 @@ button {
         }
     }
 }
-.team-section {
-    background: lightgray;
-    min-height: 300px;
+
+// cart
+.cart-body {
+    background: #f1f3f6;
     width: 100%;
+    .main-cart-sectuion {
+        padding: 15px 70px;
+        width: 100%;
+        padding-top: 90px;
+        min-height: 60px;
+
+        @media (max-width: 750px) {
+            flex-direction: column;
+            padding: 15px;
+        }
+        .mycart-outer {
+            padding-right: 0px;
+            .mycart {
+                width: 100%;
+                min-height: 200px;
+                background-color: white;
+            }
+        }
+
+        .price-detail {
+            width: 100%;
+            min-height: 200px;
+            background-color: white;
+        }
+    }
 }
