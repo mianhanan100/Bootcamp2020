@@ -150,9 +150,10 @@
                             <div class="cart-section">
                                 <div class="cart-section">
                                     <div class="cart">
-                                        <span class="cart-lable">Cart</span>
-                                        <span class="mdi mdi-cart-outline"></span>
-
+                                        <a href="cart.html">
+                                            <span class="cart-lable">Cart</span>
+                                            <span class="mdi mdi-cart-outline"></span>
+                                        </a>
                                     </div>
                                     <div class="signin">
                                         <a href="" data-toggle="modal" data-target="#modalLRForm">
@@ -324,12 +325,131 @@
                 <div class="row">
                     <div class="col-lg-8 mycart-outer">
                         <div class="mycart">
+                            <div class="heading">
+                                <h6>
+                                    MY CART (1)
+                                </h6>
+                            </div>
+                            <div class="cart-itoms-outer">
+                                <div class="cart-itom-left">
+                                    <div class="img-section">
+                                        <img src="images/product_70565_1_thumb.png" alt="">
+                                        <div class="min-max">
+                                            <span class="input-number-decrement">–</span>
+                                            <input class="input-number" type="text" value="1" min="0" max="50">
+                                            <span class="input-number-increment">+</span>
+                                        </div>
+                                    </div>
+                                    <div class="detail">
+                                        <h6>
+                                            Product Name Here
+                                        </h6>
+                                        <small>
+                                            Seller:Telemart
+                                        </small>
+                                        <p>
+                                            <span>Rs.2,074</span><del>Rs.4,999</del>
+                                        </p>
+                                        <a href="">REMOVE</a>
+                                    </div>
+                                </div>
+                                <div class="cart-itom-right">
+                                    <div class="right-box">
+                                        <h6>
+                                            Delivering in 2 to 4 Days
+                                        </h6>
+                                        <h6>
+                                            Islamic Insurance
+                                        </h6>
+                                        <select id="">
+                                            <option value="">Select Plan</option>
+                                            <option value="">1 Month for Rs. 75</option>
+                                            <option value="">3 Months for Rs. 150</option>
+                                            <option value="">6 Months for Rs. 300</option>
+                                            <option value="">1 Year for Rs. 600</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="order-btn-section">
+                            <button class="btn btn-light">
+                                <span class="mdi mdi-chevron-left"></span>
+                                CONTINUE SHOPPING
+                            </button>
+                            <button class="btn btn-light btn-2">PLACE ORDER</button>
 
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="price-detail">
-
+                            <div class="heading">
+                                <h6>
+                                    PRICE DETAILS
+                                </h6>
+                            </div>
+                            <div class="price-section-outer">
+                                <div>
+                                    <span>
+                                        Price (1 item)
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        Rs.2,074
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="price-section-outer">
+                                <div>
+                                    <span>
+                                        Delivery Charges
+                                    </span>
+                                    <br>
+                                    <small>
+                                        (Karachi: Rs 99, Other Cities: Rs 199,Other Country:Rs 5000)
+                                    </small>
+                                </div>
+                                <div>
+                                    <span>
+                                        ---
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="price-section-outer total">
+                                <div>
+                                    <span>
+                                        Amount Payable
+                                    </span>
+                                </div>
+                                <div>
+                                    <span>
+                                        Rs.2,074
+                                    </span>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="price-section-outer">
+                                <p>
+                                    Your Total Savings on this order Rs.3,000
+                                </p>
+                            </div>
+                        </div>
+                        <div class="price-detail mt-3">
+                            <div class="heading">
+                                <h6>
+                                    COUPON CODE
+                                </h6>
+                            </div>
+                            <div class="price-section-outer">
+                                <div>
+                                    <input type="text" class=" form-control" placeholder="Enter Coupon Code">
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="price-section-outer">
+                                <button class="btn btn-dark">Apply</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -650,7 +770,49 @@
             document.getElementById("mySidenav").style.width = "0";
         }
     </script>
+    <script>
+        (function () {
 
+            window.inputNumber = function (el) {
+
+                var min = el.attr('min') || false;
+                var max = el.attr('max') || false;
+
+                var els = {};
+
+                els.dec = el.prev();
+                els.inc = el.next();
+
+                el.each(function () {
+                    init($(this));
+                });
+
+                function init(el) {
+
+                    els.dec.on('click', decrement);
+                    els.inc.on('click', increment);
+
+                    function decrement() {
+                        var value = el[0].value;
+                        value--;
+                        if (!min || value >= min) {
+                            el[0].value = value;
+                        }
+                    }
+
+                    function increment() {
+                        var value = el[0].value;
+                        value++;
+                        if (!max || value <= max) {
+                            el[0].value = value++;
+                        }
+                    }
+                }
+            }
+        })();
+
+        inputNumber($('.input-number'));
+    </script>
 </body>
 
 </html>
