@@ -1386,6 +1386,7 @@ button {
             .btn-2 {
                 background-color: #fb641b;
                 border: none;
+                font-size: 14px;
                 color: white;
             }
         }
@@ -1404,7 +1405,7 @@ button {
             }
             .total {
                 border-top: 1px dotted #f0f0f0;
-                margin-top:15px;
+                margin-top: 15px;
             }
             .price-section-outer {
                 padding: 10px 20px 10px;
@@ -1412,33 +1413,143 @@ button {
                 justify-content: space-between;
                 input {
                     margin-bottom: -7px;
-                    margin-top:5px;
-                    border:none;
-                    border-bottom:1px solid #f0f0f0;
-                    border-radius:0px;
+                    margin-top: 5px;
+                    border: none;
+                    border-bottom: 1px solid #f0f0f0;
+                    border-radius: 0px;
                 }
                 .btn {
                     width: 100px;
                     font-size: 14px;
-                    background-color:#fb641b;
-                    border-radius:0px;
-                    border:none;
+                    background-color: #fb641b;
+                    border-radius: 0px;
+                    border: none;
                 }
-            h6 {
-                margin-bottom: 0px;
-               
+                h6 {
+                    margin-bottom: 0px;
+                }
+                span {
+                    font-size: 14px;
+                }
+                small {
+                    font-size: 10px;
+                }
+                p {
+                    color: #388e3c;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
             }
-            span {
+        }
+    }
+}
+// checkout
+
+.checkout-box {
+    background: #2874f0;
+    width: 100%;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+
+    .heading {
+        display: flex;
+        padding: 14px 20px;
+        align-items: center;
+        cursor: pointer;
+        .number {
+            height: 18px;
+            margin-right: 20px;
+            width: 18px;
+            align-items: center;
+            color: #2874f0;
+            border-radius: 2px;
+            background: white;
+            text-align: center;
+            font-size: 12px;
+            font-weight: 600;
+        }
+        h6 {
+            font-size: 15px;
+            margin: 0px;
+            color: white;
+        }
+    }
+    .checkout-content {
+        padding: 15px 20px;
+        width: 100%;
+        background-color: white;
+        .borderleft {
+            border-left: 1px solid #f0f0f0;
+            @media (max-width: 750px) {
+                border-top: 1px solid #f0f0f0;
+                border-left: none;
+                margin-top: 20px;
+            }
+        }
+        .lable {
+            width: 100%;
+            text-align: center;
+            color: #2874f0;
+            margin-top: 10px;
+        }
+        .lable2 {
+            width: 100%;
+            color: #2874f0;
+            margin-top: 10px;
+        }
+        .login-btn {
+            margin-top: 10px;
+            border-radius: 0px;
+            border: none;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 14px;
+        }
+        input {
+            margin-top: 10px;
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+        textarea {
+            height: 80px;
+            margin-top: 10px;
+            padding: 10px 10px;
+            font-size: 14px;
+        }
+        .selectpicker {
+            margin-top: 10px;
+            padding: 10px 10px;
+            width: 100%;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+        }
+        .btn-light {
+            background-color: #fb641b;
+            width: 100%;
+            font-size: 14px;
+            color: white;
+            margin-top: 20px;
+            border-radius: 0px;
+        }
+        @media (max-width: 750px) {
+            .btn-2 {
+                width: 85% !important;
+            }
+        }
+
+        .payment {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f5f5f5;
+            .custom-control-label {
                 font-size: 14px;
-            }
-            small {
-                font-size: 10px;
-            }
-            p {
-                color: #388e3c;
-                font-size: 14px;
-                font-weight: 600;
-            }
+                cursor: pointer;
             }
         }
     }
