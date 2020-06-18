@@ -1083,7 +1083,7 @@ button {
                         font-size: 12px;
                         padding: 5px 10px;
                         margin: 0px;
-                        color:black;
+                        color: black;
                     }
                     .rating {
                         height: 23px;
@@ -1092,12 +1092,16 @@ button {
                         background-color: #388e3c;
                         color: white;
                         padding: 2px 4px;
+                        display: flex;
                         border-radius: 3px;
                         font-size: 12px;
+                        .mdi {
+                            margin-left: 3px;
+                        }
                     }
                     .price {
                         margin: 10px;
-                        color:black;
+                        color: black;
                         del {
                             color: #878787;
                             font-size: 12px;

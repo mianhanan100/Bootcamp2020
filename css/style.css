@@ -1387,8 +1387,15 @@ button {
   background-color: #388e3c;
   color: white;
   padding: 2px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 3px;
   font-size: 12px;
+}
+
+.products-content-outer .products-content .products-section .tab-content .product-detail .rating .mdi {
+  margin-left: 3px;
 }
 
 .products-content-outer .products-content .products-section .tab-content .product-detail .price {
