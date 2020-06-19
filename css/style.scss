@@ -100,7 +100,7 @@ button {
                     align-items: flex-start;
                 }
                 img {
-                    height: 40px;
+                    height: 45px;
                     @media (max-width: 750px) {
                         margin: 10px 0px 0px 0px;
                         margin: auto;
@@ -109,9 +109,9 @@ button {
 
                 .main-div {
                     position: relative !important;
-                    padding-top: 0px;
+                    padding-top: 4px;
                     height: 16px;
-                    margin-left: -35px;
+                    margin-left: -50px;
                     margin-top: 0px;
                     font-size: 22px;
 
@@ -149,7 +149,7 @@ button {
                     width: 200px;
                     position: absolute;
                     transition: all 0.5s ease;
-                    padding-top: 39px;
+                    padding-top: 45px;
                     right: 0;
                     z-index: 9999;
                     display: none;
@@ -286,7 +286,7 @@ button {
     }
     .main-logo {
         img {
-            height: 35px;
+            height: 40px;
         }
     }
     .menu-section-mbl {
