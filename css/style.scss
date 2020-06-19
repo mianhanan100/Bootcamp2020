@@ -79,7 +79,7 @@ button {
                 flex-direction: column;
             }
             .logo-section {
-                min-width: 200px;
+                min-width: 210px;
                 height: 100%;
                 margin-right: 20px;
                 display: flex;
@@ -111,7 +111,7 @@ button {
                     position: relative !important;
                     padding-top: 4px;
                     height: 16px;
-                    margin-left: -50px;
+                    margin-left: -35px;
                     margin-top: 0px;
                     font-size: 22px;
 
@@ -301,7 +301,17 @@ button {
             background-color: white;
             overflow-x: hidden;
             transition: 0.5s;
-            padding-top: 60px;
+            .side-logo {
+                display: flex;
+                padding: 10px 0px;
+                justify-content: space-evenly;
+                align-items: center;
+                background-color: #172237;
+                border-right: 1px solid white;
+                img {
+                    height: 40px;
+                }
+            }
         }
 
         .sidenav a {
@@ -316,11 +326,10 @@ button {
         }
 
         .sidenav .closebtn {
-            position: absolute;
             top: 0;
+            color: white;
             right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
+            font-size: 30px;
         }
         .side-nav {
             box-shadow: none;
@@ -403,7 +412,7 @@ button {
 
     @media (max-width: 750px) {
         flex-direction: column;
-        padding: 15px;
+        padding: 10px 15px;
     }
     .slidre-outer {
         padding-right: 0px;
@@ -1080,31 +1089,35 @@ button {
                 }
                 .product-detail {
                     h5 {
-                        font-size: 12px;
+                        font-size: 14px;
                         padding: 5px 10px;
                         margin: 0px;
+                        line-height: 20px;
                         color: black;
                     }
                     .rating {
-                        height: 23px;
-                        width: 30px;
+                        height: 20px;
+                        width: 28px;
                         margin: 0px 10px;
                         background-color: #388e3c;
                         color: white;
                         padding: 2px 4px;
                         display: flex;
                         border-radius: 3px;
-                        font-size: 12px;
+                        font-size: 11px;
                         .mdi {
                             margin-left: 3px;
                         }
                     }
                     .price {
                         margin: 10px;
+                        font-weight: 600;
+                        letter-spacing: 1px;
                         color: black;
                         del {
                             color: #878787;
                             font-size: 12px;
+                            font-weight: 500;
                         }
                     }
                 }
@@ -1124,7 +1137,7 @@ button {
             width: 100%;
             border-right: 1px solid #f0f0f0;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0px 5px;
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -1133,7 +1146,7 @@ button {
         .mbl-filter {
             width: 100%;
             text-align: center;
-            padding: 10px;
+            padding: 15px 0px 5px;
             span {
                 font-weight: 600;
                 font-size: 16px;
@@ -1581,6 +1594,12 @@ button {
             display: flex;
             @media (max-width: 750px) {
                 flex-direction: column;
+                .order1 {
+                    order: 2;
+                }
+                .order2 {
+                    order: 1;
+                }
             }
             .small-images {
                 width: 90px;
@@ -1619,44 +1638,12 @@ button {
                 width: 100%;
                 min-height: 200px;
                 padding: 0px;
-                .button-section {
-                    min-height: 50px;
-                    padding-top: 20px;
-                    display: flex;
-                    justify-content: space-between;
-                    @media (max-width: 750px) {
-                        flex-direction: column;
-                        padding-top: 10px;
-                        button {
-                            width: 100% !important;
-                            margin-bottom: 10px;
-                        }
-                    }
 
-                    .btn1 {
-                        background: white;
-                        border-radius: 0px;
-                        padding: 10px;
-                        width: 49%;
-                        font-size: 14px;
-                        font-weight: 600;
-                        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-                        border: 1px solid #f0f0f0;
-                    }
-                    .btn2 {
-                        background: #fb641b;
-                        border-radius: 0px;
-                        width: 49%;
-                        font-size: 14px;
-                        color: white;
-                        padding: 10px;
-                        width: 49%;
-                        font-weight: 600;
-                        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-                    }
-                }
                 .large-images-slider {
                     border: 1px solid #f0f0f0;
+                    @media (max-width: 750px) {
+                        margin-bottom: 10px;
+                    }
                 }
                 .product-slider-header {
                     min-height: 60px;
@@ -1839,5 +1826,41 @@ button {
                 width: 100%;
             }
         }
+    }
+}
+.detail-button-section {
+    min-height: 50px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 750px) {
+        flex-direction: column;
+        padding-top: 10px;
+        button {
+            width: 100% !important;
+            margin-bottom: 10px;
+        }
+    }
+
+    .btn1 {
+        background: white;
+        border-radius: 0px;
+        padding: 10px;
+        width: 49%;
+        font-size: 14px;
+        font-weight: 600;
+
+        border: 2px solid #f0f0f0;
+    }
+    .btn2 {
+        background: #fb641b;
+        border-radius: 0px;
+        width: 49%;
+        font-size: 14px;
+        color: white;
+        padding: 10px;
+        width: 49%;
+        font-weight: 600;
+        box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
     }
 }
