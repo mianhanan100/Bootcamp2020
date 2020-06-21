@@ -308,9 +308,10 @@ button {
                 align-items: center;
                 background-color: #172237;
                 border-right: 1px solid white;
-                img {
-                    height: 40px;
-                }
+               small {
+                   margin:0px;
+                   color:white;
+               }
             }
         }
 

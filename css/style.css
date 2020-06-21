@@ -434,8 +434,9 @@ button {
   border-right: 1px solid white;
 }
 
-.mobile-header .menu-section-mbl .sidenav .side-logo img {
-  height: 40px;
+.mobile-header .menu-section-mbl .sidenav .side-logo small {
+  margin: 0px;
+  color: white;
 }
 
 .mobile-header .menu-section-mbl .sidenav a {
